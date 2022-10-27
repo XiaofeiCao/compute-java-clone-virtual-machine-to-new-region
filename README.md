@@ -9,11 +9,14 @@ extensions:
   platforms: java
 ---
 
-# Getting Started with Compute - Manage Virtual Machine From MSI Enabled Virtual Machine - in Java #
+# Getting Started with Compute - Clone Virtual Machine to a new region - in Java #
 
-
-  Azure Compute sample for managing virtual machine from Managed Service Identity (MSI) enabled virtual machine -
-    - Create a virtual machine using MSI credentials from System assigned or User Assigned MSI enabled VM.
+  Azure Compute sample for managing virtual machines -
+   - Create an managed virtual machine from PIR image with data disks
+   - Create incremental snapshot from the virtual machine's OS and data disks
+   - Copy incremental snapshots to the new region
+   - Create managed disks from the snapshots of the new region
+   - Create virtual machine by attaching the managed disks
  
 
 ## Running this Sample ##
@@ -22,9 +25,9 @@ To run this sample:
 
 See [DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/identity/azure-identity#defaultazurecredential) and prepare the authentication works best for you. For more details on authentication, please refer to [AUTH.md](https://github.com/Azure/azure-sdk-for-java/blob/main/sdk/resourcemanager/docs/AUTH.md).
 
-    git clone https://github.com/Azure-Samples/compute-java-manage-vm-from-vm-with-msi-credentials.git
+    git clone git@github.com:XiaofeiCao/compute-java-clone-virtual-machine-to-new-region.git
 
-    cd compute-java-manage-vm-from-vm-with-msi-credentials
+    cd compute-java-clone-virtual-machine-to-new-region.git
 
     mvn clean compile exec:java
 

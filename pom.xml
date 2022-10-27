@@ -15,7 +15,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.4.0</version>
         <configuration>
-          <mainClass>com.azure.resourcemanager.compute.samples.ManageVirtualMachineFromMSIEnabledVirtualMachine</mainClass>
+          <mainClass>com.azure.resourcemanager.compute.samples.CloneVirtualMachineToNewRegion</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
         </configuration>
       </plugin>
@@ -41,7 +41,7 @@
               </descriptorRefs>
               <archive>
                 <manifest>
-                  <mainClass>com.azure.resourcemanager.compute.samples.ManageVirtualMachineFromMSIEnabledVirtualMachine.java</mainClass>
+                  <mainClass>com.azure.resourcemanager.compute.samples.CloneVirtualMachineToNewRegion.java</mainClass>
                 </manifest>
               </archive>
             </configuration>
